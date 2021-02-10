@@ -1,6 +1,6 @@
 # insta_backup
 
-Save your posts from Google's instagram and stores at LBRY protocol 
+Save your posts from Instagram and stores at LBRY protocol 
 
 ![](https://i.ibb.co/QPK8pf2/aaaa-removebg-preview.png)
 
@@ -16,6 +16,7 @@ and it will ask your for login details so you can download your profile
 
 ## Next steps: 
 
+  - fix slide post bug 
   - add an interface 
   - provide tutorial 
   - understando how to work with slide posts 
