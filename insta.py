@@ -65,7 +65,7 @@ for index, post in enumerate(posts, 1):
     if os.path.isfile(my_file): 
         os.chdir(folder)
          
-        with open('post.txt', 'r') as file:
+        with open('post.txt', 'r', encoding='utf-8') as file:
             global description 
             description = file.read()
         
