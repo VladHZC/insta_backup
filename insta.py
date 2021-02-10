@@ -27,11 +27,18 @@ insta = instaloader.Instaloader(
         download_comments=False,
         )
 
-# Load a profile from an Instagram handle
+
+
+
 instagram = input('insert your instagram account (no need for @): ')
 
 profile = instaloader.Profile.from_username(insta.context, instagram)
-posts = profile.get_posts()
+answer = input('Is you profile public? (Y/N): ')
+
+if answer == "Y": 
+    print('ok, dude')
+else: 
+    insta.interactive_login(profile.username)
 
 print("Username: " + profile.username)
 print("Post Count: " + str(profile.mediacount))
@@ -39,7 +46,7 @@ print("IGTV Count: " + str(profile.igtvcount))
 print("Followers: " + str(profile.followers))
 print("Bio: " + profile.biography) 
 
-#insta.interactive_login(profile.username) #activate when your profile is private
+
 
 channel_id =input('Please insert the Claim Id of the desired LBRY channel: ')
 bid = input('insert the desired BID value for each post: ')
